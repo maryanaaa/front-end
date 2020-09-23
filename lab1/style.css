@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.header {
+    background: #afdafc;
+    flex: 1;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+}
+
+.nav {
+    background: #d1d7fc;
+    flex: 1;
+}
+
+.article {
+    background: white;
+    flex: 3;
+}
+
+.aside {
+    background: #f6c7cb;
+    flex: 1;
+}
+
+.footer {
+    background: #afdafc;
+    flex: 1;
+}
+
+@media (max-width: 480px) {
+    .main > * {
+        flex: 1 100%;
+    }
+
+    .article {
+        height: 60%;;
+    }
+
+    .header, .footer {
+        max-height: 10%;
+    }
+}
